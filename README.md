@@ -53,7 +53,7 @@ technically public.
 ## Author comments — how delivery works
 
 Each "Send feedback" click emails the comment to the coordinator
-(andres@graphicsinscience.com) via formsubmit.co, with the figure name as
+via formsubmit.co (using an alias code, so the address never appears in the page source), with the figure name as
 the subject line (e.g. "Fig. 4.2"). No backend or account is needed, but:
 
 - **One-time activation:** the very first submission triggers a confirmation
@@ -62,5 +62,5 @@ the subject line (e.g. "Fig. 4.2"). No backend or account is needed, but:
 - The comment also stays visible in the sender's own browser (localStorage),
   so authors can see what they already sent. Other authors do not see each
   other's comments — the email to the coordinator is the single source of truth.
-- To change the destination address, search index.html for
-  "andres@graphicsinscience.com".
+- To change the destination address, replace the formsubmit alias code in
+  index.html (search for "formsubmitCode").

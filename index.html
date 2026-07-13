@@ -28,6 +28,9 @@ a{color:#2038A8}a:hover{color:#E87722}
       <div style="font-size:12px;color:#ffb98a;text-align:center;min-height:16px">{{ gate.msg }}</div>
     </div>
     <div style="font-size:11px;color:#8fa0d8;text-align:center;width:280px;line-height:1.5">Access is remembered on this device. Passphrase is in the invite email.</div>
+    <sc-if value="{{ gate.noteShow }}" hint-placeholder-val="{{ false }}">
+      <div style="width:320px;padding:10px 14px;border-radius:8px;background:rgba(232,119,34,.15);border:1px solid rgba(232,119,34,.45);font-size:11px;line-height:1.55;color:#ffd9b8;text-align:center"><strong style="color:#ffb98a">Note for the coordinator:</strong> the first feedback ever sent triggers a one-time activation email from formsubmit.co to the coordinator's inbox — click its activation link once, and all feedback will be delivered normally.</div>
+    </sc-if>
   </div>
 </sc-if>
 
@@ -157,8 +160,9 @@ a{color:#2038A8}a:hover{color:#E87722}
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{
   &quot;requirePassphrase&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Access&quot;},
+  &quot;showActivationNote&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Access&quot;},
   &quot;gridColumns&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [3, 4, 5], &quot;default&quot;: 4, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Layout&quot;},
-  &quot;coordinatorEmail&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;andres@graphicsinscience.com&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Feedback&quot;}
+  &quot;formsubmitCode&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;029a02dcfad5b85990434cc36436f961&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Feedback&quot;}
 }">
 class Component extends DCLogic {
   state = {
@@ -250,21 +254,23 @@ class Component extends DCLogic {
     const who = (this.state.who || '').trim();
     if (!who) { this.setState({ whoMsg: 'Please add your name so the feedback is name-stamped.', whoCol: '#B3261E' }); return; }
     if (this.state.sending) return;
-    const email = this.props.coordinatorEmail ?? 'andres@graphicsinscience.com';
+    // formsubmit.co alias code — keeps the raw email address out of the page source
+    const endpoint = this.props.formsubmitCode ?? '029a02dcfad5b85990434cc36436f961';
     this.setState({ sending: true, whoMsg: '', whoCol: '#B3261E' });
-    fetch('https://formsubmit.co/ajax/' + email, {
+    fetch('https://formsubmit.co/ajax/' + endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({ _subject: label, _template: 'table', name: who, figure: label, comment: text })
     }).then(r => r.json()).then(j => {
-      if (!(j.success === true || j.success === 'true')) throw new Error(j.message || 'send failed');
+      if (!(j.success === true || j.success === 'true')) { const e = new Error(j.message || 'send failed'); e.fromService = true; throw e; }
       const when = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
       const comments = { ...this.state.comments };
       comments[figId] = [...(comments[figId] || []), { who, text, when }];
       this.setState({ comments, drafts: { ...this.state.drafts, [figId]: '' }, sending: false, whoMsg: '✓ Sent by email to the coordinator.', whoCol: '#1F7A3D' });
       this.persist('amocFigComments', comments);
-    }).catch(() => {
-      this.setState({ sending: false, whoMsg: 'Could not send — please email ' + email + ' directly. Your text is kept above.', whoCol: '#B3261E' });
+    }).catch((err) => {
+      const detail = (err && err.fromService && err.message) ? ' (' + err.message + ')' : '';
+      this.setState({ sending: false, whoMsg: 'Could not send' + detail + ' — please email the coordinator directly. Your text is kept above.', whoCol: '#B3261E' });
     });
   }
 
@@ -367,7 +373,8 @@ class Component extends DCLogic {
         on: (e) => this.setState({ gateVal: e.target.value, gateMsg: '' }),
         key: (e) => { if (e.key === 'Enter') this.tryGate(); },
         go: () => this.tryGate(),
-        msg: s.gateMsg
+        msg: s.gateMsg,
+        noteShow: this.props.showActivationNote ?? true
       },
       meta: { summary: all.length + ' figures · 6 chapters + SPM.' },
       heading: s.ch === 0 ? 'All figures' : (s.ch === 'SPM' ? 'SPM' : 'Chapter ' + s.ch),
