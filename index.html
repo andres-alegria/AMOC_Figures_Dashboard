@@ -159,7 +159,7 @@ a{color:#2038A8}a:hover{color:#E87722}
 <script type="text/x-dc" data-dc-script data-props="{
   &quot;requirePassphrase&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Access&quot;},
   &quot;gridColumns&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [3, 4, 5], &quot;default&quot;: 4, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Layout&quot;},
-  &quot;formsubmitCode&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;029a02dcfad5b85990434cc36436f961&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Feedback&quot;}
+  &quot;web3formsKey&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;3baa8908-0a27-476c-94b5-9362bd84d8db&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Feedback&quot;}
 }">
 class Component extends DCLogic {
   state = {
@@ -251,13 +251,13 @@ class Component extends DCLogic {
     const who = (this.state.who || '').trim();
     if (!who) { this.setState({ whoMsg: 'Please add your name so the feedback is name-stamped.', whoCol: '#B3261E' }); return; }
     if (this.state.sending) return;
-    // formsubmit.co alias code — keeps the raw email address out of the page source
-    const endpoint = this.props.formsubmitCode ?? '029a02dcfad5b85990434cc36436f961';
+    // Web3Forms access key — public key, safe for client-side code (get/rotate at https://web3forms.com)
+    const accessKey = this.props.web3formsKey ?? '3baa8908-0a27-476c-94b5-9362bd84d8db';
     this.setState({ sending: true, whoMsg: '', whoCol: '#B3261E' });
-    fetch('https://formsubmit.co/ajax/' + endpoint, {
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({ _subject: label, _template: 'table', name: who, figure: label, comment: text })
+      body: JSON.stringify({ access_key: accessKey, subject: label, name: who, figure: label, comment: text })
     }).then(r => r.json()).then(j => {
       if (!(j.success === true || j.success === 'true')) { const e = new Error(j.message || 'send failed'); e.fromService = true; throw e; }
       const when = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
