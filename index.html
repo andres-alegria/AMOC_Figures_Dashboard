@@ -185,6 +185,7 @@ class Component extends DCLogic {
         this.setState({ ready: true, comments, statuses, who, unlocked });
         this.probeVersions();
         this.loadSheet();
+        this.loadComments();
       } else setTimeout(tryLoad, 120);
     };
     tryLoad();
@@ -293,6 +294,56 @@ class Component extends DCLogic {
       }).catch(() => {});
   }
 
+  // ---- shared comments: exported CSV from the form service, dropped in the repo root ----
+  loadComments() {
+    fetch('comments.csv', { cache: 'no-store' })
+      .then(r => { if (!r.ok) throw 0; return r.text(); })
+      .then(txt => {
+        const rows = this.parseCSV(txt);
+        if (rows.length < 2) return;
+        const head = rows[0].map(h => h.trim().toLowerCase());
+        const ix = {
+          when: head.indexOf('submitted at'),
+          who: head.indexOf('name'),
+          text: head.indexOf('comment'),
+          fig: head.indexOf('figure')
+        };
+        if (ix.who === -1 || ix.text === -1 || ix.fig === -1) return;
+        const shared = {};
+        rows.slice(1).forEach(r => {
+          const label = (r[ix.fig] || '').trim();
+          const text = (r[ix.text] || '').trim();
+          if (!label || !text) return;
+          const d = ix.when !== -1 ? new Date(r[ix.when]) : null;
+          const ok = d && !isNaN(d.getTime());
+          (shared[label] = shared[label] || []).push({
+            who: (r[ix.who] || '').trim() || 'Anonymous', text,
+            when: ok ? d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) : '',
+            ts: ok ? d.getTime() : 0
+          });
+        });
+        Object.values(shared).forEach(a => a.sort((x, y) => x.ts - y.ts));
+        this.setState({ sharedComments: shared });
+      }).catch(() => {});
+  }
+
+  parseCSV(txt) {
+    const rows = []; let row = [], cur = '', q = false;
+    for (let i = 0; i < txt.length; i++) {
+      const c = txt[i];
+      if (q) { if (c === '"') { if (txt[i + 1] === '"') { cur += '"'; i++; } else q = false; } else cur += c; }
+      else if (c === '"') q = true;
+      else if (c === ',') { row.push(cur); cur = ''; }
+      else if (c === '\n' || c === '\r') {
+        if (c === '\r' && txt[i + 1] === '\n') i++;
+        row.push(cur); if (row.length > 1 || row[0] !== '') rows.push(row);
+        row = []; cur = '';
+      } else cur += c;
+    }
+    if (cur !== '' || row.length) { row.push(cur); rows.push(row); }
+    return rows;
+  }
+
   applySheet(f) {
     const row = (this.state.sheet || {})[f.id];
     if (!row) return f;
@@ -339,7 +390,10 @@ class Component extends DCLogic {
 
   decorate(f) {
     const s = this.state;
-    const comments = s.comments[f.id] || [];
+    const local = s.comments[f.id] || [];
+    const shared = (s.sharedComments || {})[f.label] || [];
+    const seen = new Set(shared.map(c => c.who + '|' + c.text));
+    const comments = shared.concat(local.filter(c => !seen.has(c.who + '|' + c.text)));
     const versions = this.allVersions(f);
     const latest = versions[versions.length - 1];
     const vi = s.ver[f.id] != null ? Math.min(s.ver[f.id], versions.length - 1) : versions.length - 1;
