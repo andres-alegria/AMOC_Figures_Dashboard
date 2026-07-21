@@ -175,14 +175,15 @@ class Component extends DCLogic {
   componentDidMount() {
     const tryLoad = () => {
       if (window.AMOC_FIGURES) {
-        let comments = {}, statuses = {}, who = '', unlocked = false;
+        let statuses = {}, who = '', unlocked = false;
         try {
-          comments = JSON.parse(localStorage.getItem('amocFigComments') || '{}');
+          // comments are NOT read back from localStorage — comments.csv is the single
+          // source of truth on reload; local state below is just an optimistic, in-session cache
           statuses = JSON.parse(localStorage.getItem('amocFigStatuses') || '{}');
           who = localStorage.getItem('amocFigWho') || '';
           unlocked = localStorage.getItem('amocGateOk') === '1';
         } catch (e) {}
-        this.setState({ ready: true, comments, statuses, who, unlocked });
+        this.setState({ ready: true, statuses, who, unlocked });
         this.probeVersions();
         this.loadSheet();
         this.loadComments();
@@ -377,7 +378,6 @@ class Component extends DCLogic {
       const comments = { ...this.state.comments };
       comments[figId] = [...(comments[figId] || []), { who, text, when }];
       this.setState({ comments, drafts: { ...this.state.drafts, [figId]: '' }, sending: false, whoMsg: '✓ Sent by email to the coordinator.', whoCol: '#1F7A3D' });
-      this.persist('amocFigComments', comments);
     }).catch((err) => {
       const detail = (err && err.fromService && err.message) ? ' (' + err.message + ')' : '';
       this.setState({ sending: false, whoMsg: 'Could not send' + detail + ' — please email the coordinator directly. Your text is kept above.', whoCol: '#B3261E' });
