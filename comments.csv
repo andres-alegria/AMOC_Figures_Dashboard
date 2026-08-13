@@ -1,2 +1,26 @@
 Submitted At,Name,Comment,Figure,Subject
-2026-07-20T14:40:29.636Z,Andrés,Test comment.,Fig. 1.1,Fig. 1.1
+2026-08-11T21:48:44.348Z,Gaurav Madan,Contact: gaurav.madan@ncas.ac.uk,Fig. 3.2,Fig. 3.2
+2026-08-11T21:48:21.822Z,Gaurav Madan,Contact: gaurav.madan@ncas.ac.uk,Fig. 3.3,Fig. 3.3
+2026-08-11T17:25:57.359Z,Jon Robson,Gaurav Madan (or I) should be contact for this one,Fig. 3.3,Fig. 3.3
+2026-08-11T17:25:51.404Z,Jon Robson,Gaurav Madan (or I) should be contact for this one,Fig. 3.2,Fig. 3.2
+2026-08-11T17:25:05.385Z,Jon Robson,"Hi Andreas, I should be the contact for this one. 
+
+My intension is to update this and simplify. I have been making the schematic figure just in google slides so far, is that OK to continue itterating that way?",Fig. 3.8,Fig. 3.8
+2026-08-05T09:57:04.843Z,Femke de Jong,"A north-south vertical cut through the Atlantic that shows where these flows are in the vertical. The properties (in blue here) show the connection along the path, but this could be done with color shading also. Ideally the style would be aligned with the final Figure 1. There are other examples of vertical north-south sections here: 
+- Fig 2 in https://tos.org/oceanography/article/interactions-between-the-arctic-mediterranean-and-the-atlantic-meridional-overturning-circulation-a-review
+- Fig 2 in chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.pik-potsdam.de/~anders/publications/kuhlbrodt_griesel07.pdf (if we include processes then this one needs to be updated).
+-  ocean properties are nicely displayed in the eWOCE gallery Atlantic section A16. For example https://ewoce.org/gallery/A16_OXYGEN.gif",Fig. 2.2,Fig. 2.2
+2026-08-04T09:45:06.145Z,Femke de Jong,"I had empty lines between the seperate comments, but they seemed to have disappeared",Fig. 1.1,Fig. 1.1
+2026-08-04T09:42:52.014Z,Femke de Jong,"Several comments 
+
+The major ones
+
+Chapter 2 would like to show visually that the circulation is not a continuous line, that water follows different pathways (flowing in and out) and that the two gyres are not as connected as they look here. This is a big question for us because it is crucial for understanding, but we have been struggling to represent this visually for yours ourselves. The broken up line suggestion in the in-person meeting doesn't do this because it still all had one direction. Happy to talk about this more and show some figures of data
+
+Modification of water properties along its pathways is very important. The upper water gets less warm on its way north. The deep waters get less cold on their way south. This could be represented using gradual colour shading. 
+
+The zoom in should/could show more detail than the inset, but now the inset has the eddy detail and the zoom does not
+
+Convection regions in the Labrador Sea and Irminger Sea are not seperate, but are connected through the area south of Greenland. Would use some colour shading rather than dots (now a flock of birds of school of fish sitting there ;) )
+
+Because the land is throwing a shadow, it appears to be offset in location from where it actually is. Maybe this is not so, but it is confusing visually",Fig. 1.1,Fig. 1.1
