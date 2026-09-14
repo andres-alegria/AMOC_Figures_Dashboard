@@ -25,9 +25,14 @@ Drop the new file into `figures/` using the naming scheme:
 ```
 Ch_<chapter>_Figure_<number>[letter]_v<version>.png     e.g. Ch_2_Figure_3_v1.png
 Ch_SPM_Figure_<number>_v0.png                           for SPM figures
+Ch_<chapter>_Figure_<Name>_v<version>.jpg               named, not yet numbered, e.g. Ch_SPM_Figure_CRD_v1.jpg
 ```
 
-Then commit + push. The included GitHub Action automatically:
+Names must start with a letter and use only letters, digits and hyphens (no
+underscores or spaces). In `Figures.xlsx`, put the same name in the Figure
+column (e.g. `CRD`) to attach its text. PNG, JPG and JPEG all work.
+
+Then run `python3 scripts/update_figures.py` and commit + push. The script:
 - regenerates `figures-data.js` (keeping all titles/captions/contacts you've filled in),
 - creates the missing thumbnails in `thumbs/`.
 

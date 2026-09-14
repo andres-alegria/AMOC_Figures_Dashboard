@@ -50,6 +50,10 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_1_Figure_3_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_1_Figure_3_v1.jpg"
    }
   ]
  },
@@ -608,6 +612,28 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_6_Figure_3_v0.png"
+   }
+  ]
+ },
+ {
+  "id": "chSPM-figcrd",
+  "chapter": "SPM",
+  "figure": "CRD",
+  "variant": "",
+  "label": "Fig. SPM.CRD",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_SPM_Figure_CRD_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_SPM_Figure_CRD_v1.jpg"
    }
   ]
  }

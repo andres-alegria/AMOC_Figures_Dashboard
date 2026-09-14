@@ -4,8 +4,9 @@
 Run automatically by GitHub Actions on every push that touches figures/,
 or manually:  python3 scripts/update_figures.py
 
-- Scans figures/ for files named  Ch_<chapter>_Figure_<num>[a|b]_v<version>.(png|jpg|jpeg)
-  (<chapter> is 1-6 or SPM)
+- Scans figures/ for files named  Ch_<chapter>_Figure_<id>_v<version>.(png|jpg|jpeg)
+  (<chapter> is 1-6 or SPM; <id> is a number with optional letter, e.g. 3 or 4a,
+  or a text name starting with a letter, e.g. CRD, for figures not yet numbered)
 - Merges them into figures-data.js, PRESERVING existing titles, captions,
   notes and contacts. New figures get empty metadata you can fill in by
   editing figures-data.js.
@@ -18,7 +19,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIG_DIR = os.path.join(ROOT, 'figures')
 THUMB_DIR = os.path.join(ROOT, 'thumbs')
 DATA_JS = os.path.join(ROOT, 'figures-data.js')
-PATTERN = re.compile(r'^Ch_(\d+|SPM)_Figure_(\d+)([a-z]?)_v(\d+)\.(png|jpe?g)$', re.I)
+PATTERN = re.compile(
+    r'^Ch_(\d+|SPM)_Figure_(?:(\d+)([a-z]?)|([A-Za-z][A-Za-z0-9-]*))_v(\d+)\.(png|jpe?g)$', re.I)
 
 def chapter_key(ch):
     return ch if ch == 'SPM' else int(ch)
@@ -37,8 +39,12 @@ def main():
         m = PATTERN.match(name)
         if not m:
             continue
-        ch, num, var, ver = chapter_key(m.group(1)), int(m.group(2)), m.group(3).lower(), int(m.group(4))
-        fid = 'ch{}-fig{}{}'.format(ch, num, var)
+        ch, ver = chapter_key(m.group(1)), int(m.group(5))
+        if m.group(2):
+            num, var = int(m.group(2)), m.group(3).lower()
+        else:
+            num, var = m.group(4), ''   # named figure, e.g. CRD
+        fid = 'ch{}-fig{}{}'.format(ch, str(num).lower(), var)
         found.setdefault(fid, {'ch': ch, 'num': num, 'var': var, 'versions': []})
         found[fid]['versions'].append({'v': ver, 'file': 'figures/' + name})
 
@@ -54,8 +60,11 @@ def main():
                 'versions': versions,
             }
 
+    # numbered figures first, then named figures alphabetically
     ordered = sorted(records.values(), key=lambda r: (
-        (7, 0) if r['chapter'] == 'SPM' else (0, r['chapter']), r['figure'], r['variant']))
+        (7, 0) if r['chapter'] == 'SPM' else (0, r['chapter']),
+        (0, r['figure'], '') if isinstance(r['figure'], int) else (1, 0, str(r['figure']).lower()),
+        r['variant']))
     with open(DATA_JS, 'w', encoding='utf-8') as f:
         f.write('window.AMOC_FIGURES = ' + json.dumps(ordered, indent=1, ensure_ascii=False) + ';\n')
     print('figures-data.js: {} figures'.format(len(ordered)))
