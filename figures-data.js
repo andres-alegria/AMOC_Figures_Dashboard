@@ -58,29 +58,11 @@ window.AMOC_FIGURES = [
   ]
  },
  {
-  "id": "ch1-fig4a",
+  "id": "ch1-fig4",
   "chapter": 1,
   "figure": 4,
-  "variant": "a",
-  "label": "Fig. 1.4a",
-  "title": "Placeholder title",
-  "caption": "Risk framework",
-  "notes": "",
-  "contact": "",
-  "date": "10.July",
-  "versions": [
-   {
-    "v": 0,
-    "file": "figures/Ch_1_Figure_4a_v0.png"
-   }
-  ]
- },
- {
-  "id": "ch1-fig4b",
-  "chapter": 1,
-  "figure": 4,
-  "variant": "b",
-  "label": "Fig. 1.4b",
+  "variant": "",
+  "label": "Fig. 1.4",
   "title": "Placeholder title",
   "caption": "Examples of how risk may emerge for case studies under the two AMOC storylines. Each of the examples illustrates how risk could evolve and has a narrative drawn from the literature and current understanding of the system and processes – see example figure for temperature overshoot below for risk from sea level rise.  Intent for figure option 2: Risks will differ with a larger AMOC weakening compared to a smaller weakening (link to storylines)",
   "notes": "",
@@ -89,7 +71,7 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_1_Figure_4b_v0.png"
+    "file": "figures/Ch_1_Figure_4_v0.png"
    }
   ]
  },
