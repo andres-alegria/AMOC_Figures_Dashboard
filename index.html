@@ -184,6 +184,7 @@ class Component extends DCLogic {
           unlocked = localStorage.getItem('amocGateOk') === '1';
         } catch (e) {}
         this.setState({ ready: true, statuses, who, unlocked });
+        if (unlocked || !(this.props.requirePassphrase ?? true)) this.loadAnalytics();
         this.probeVersions();
         this.loadSheet();
         this.loadComments();
@@ -529,10 +530,24 @@ class Component extends DCLogic {
     };
   }
 
+  // ---- Cloudflare Web Analytics: loaded only once the passphrase gate is passed,
+  //      so visitors who never unlock are not counted ----
+  loadAnalytics() {
+    const CF_TOKEN = '84b7063303fb498b998b261fa2d93222';   // Cloudflare Web Analytics site token
+    if (window.__cfBeaconLoaded) return;
+    window.__cfBeaconLoaded = true;
+    const sc = document.createElement('script');
+    sc.defer = true;
+    sc.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    sc.setAttribute('data-cf-beacon', JSON.stringify({ token: CF_TOKEN }));
+    document.head.appendChild(sc);
+  }
+
   tryGate() {
     if (this.state.gateVal.trim().toLowerCase() === 'amoc') {
       this.setState({ unlocked: true });
       this.persist('amocGateOk', '1');
+      this.loadAnalytics();
     } else {
       this.setState({ gateMsg: 'That passphrase is not right — check the invite email.' });
     }
