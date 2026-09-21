@@ -472,24 +472,6 @@ window.AMOC_FIGURES = [
   ]
  },
  {
-  "id": "ch4-fig7",
-  "chapter": 4,
-  "figure": 7,
-  "variant": "",
-  "label": "Fig. 4.7",
-  "title": "Conceptual role of metaphors in climate science and their relation to models and data.",
-  "caption": "The “conveyor belt” metaphor illustrates an intuitive view of large-scale ocean circulation and associated heat and carbon transport, but oversimplifies the underlying three-dimensional dynamics, including eddies, upwelling, and vertical mixing. The “tipping point” metaphor highlights the potential for abrupt and potentially irreversible transitions between system states, yet may mask the diversity of pathways, gradual changes, and uncertainties inherent in complex climate dynamics. These metaphors are therefore embedded within a broader framework of Earth system models, conceptual models, statistical analyses, observations, and proxy data, which provide the necessary physical grounding and quantification. The figure emphasizes that metaphors support insight and communication but must remain consistent with models, data, and associated uncertainties (cf. Lohmann, 2026).",
-  "notes": "",
-  "contact": "",
-  "date": "10.July",
-  "versions": [
-   {
-    "v": 0,
-    "file": "figures/Ch_4_Figure_7_v0.png"
-   }
-  ]
- },
- {
   "id": "ch5-fig1",
   "chapter": 5,
   "figure": 1,
