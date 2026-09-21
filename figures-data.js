@@ -58,24 +58,6 @@ window.AMOC_FIGURES = [
   ]
  },
  {
-  "id": "ch1-fig4",
-  "chapter": 1,
-  "figure": 4,
-  "variant": "",
-  "label": "Fig. 1.4",
-  "title": "Placeholder title",
-  "caption": "Examples of how risk may emerge for case studies under the two AMOC storylines. Each of the examples illustrates how risk could evolve and has a narrative drawn from the literature and current understanding of the system and processes – see example figure for temperature overshoot below for risk from sea level rise.  Intent for figure option 2: Risks will differ with a larger AMOC weakening compared to a smaller weakening (link to storylines)",
-  "notes": "",
-  "contact": "",
-  "date": "10.July",
-  "versions": [
-   {
-    "v": 0,
-    "file": "figures/Ch_1_Figure_4_v0.png"
-   }
-  ]
- },
- {
   "id": "ch1-fig5",
   "chapter": 1,
   "figure": 5,
