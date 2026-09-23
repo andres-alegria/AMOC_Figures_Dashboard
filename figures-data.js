@@ -14,6 +14,22 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_1_Figure_1_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_1_Figure_1_v1.jpg"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_1_Figure_1_v2.jpg"
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_1_Figure_1_v3.jpg"
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_1_Figure_1_v4.jpg"
    }
   ]
  },
@@ -36,6 +52,24 @@ window.AMOC_FIGURES = [
   ]
  },
  {
+  "id": "ch1-fig3",
+  "chapter": 1,
+  "figure": 3,
+  "variant": "",
+  "label": "Fig. 1.3",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_1_Figure_3_v0.png"
+   }
+  ]
+ },
+ {
   "id": "ch1-fig4",
   "chapter": 1,
   "figure": 4,
@@ -54,6 +88,10 @@ window.AMOC_FIGURES = [
    {
     "v": 1,
     "file": "figures/Ch_1_Figure_4_v1.jpg"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_1_Figure_4_v2.jpg"
    }
   ]
  },
@@ -72,6 +110,14 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_1_Figure_5_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_1_Figure_5_v1.jpg"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_1_Figure_5_v2.jpg"
    }
   ]
  },
@@ -90,6 +136,10 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_2_Figure_1_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_2_Figure_1_v1.jpg"
    }
   ]
  },
@@ -108,6 +158,14 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_2_Figure_2_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_2_Figure_2_v1.jpg"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_2_Figure_2_v2.jpg"
    }
   ]
  },
@@ -144,6 +202,10 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_2_Figure_4_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_2_Figure_4_v1.jpg"
    }
   ]
  },
@@ -162,6 +224,10 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_2_Figure_5_v0.jpeg"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_2_Figure_5_v1.jpg"
    }
   ]
  },
@@ -270,6 +336,10 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_3_Figure_4_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_3_Figure_4_v1.jpg"
    }
   ]
  },
@@ -378,6 +448,10 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_4_Figure_2_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_4_Figure_2_v1.jpg"
    }
   ]
  },
@@ -396,6 +470,10 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_4_Figure_3_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_4_Figure_3_v1.jpg"
    }
   ]
  },
@@ -540,6 +618,10 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_6_Figure_2_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_6_Figure_2_v1.jpg"
    }
   ]
  },
@@ -558,6 +640,36 @@ window.AMOC_FIGURES = [
    {
     "v": 0,
     "file": "figures/Ch_6_Figure_3_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_6_Figure_3_v1.jpg"
+   }
+  ]
+ },
+ {
+  "id": "chSPM-figamoc",
+  "chapter": "SPM",
+  "figure": "AMOC",
+  "variant": "",
+  "label": "Fig. SPM.AMOC",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_SPM_Figure_AMOC_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_SPM_Figure_AMOC_v1.png"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_SPM_Figure_AMOC_v2.jpg"
    }
   ]
  },
@@ -580,6 +692,150 @@ window.AMOC_FIGURES = [
    {
     "v": 1,
     "file": "figures/Ch_SPM_Figure_CRD_v1.jpg"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_SPM_Figure_CRD_v2.jpg"
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_SPM_Figure_CRD_v3.jpg"
+   }
+  ]
+ },
+ {
+  "id": "chSPM-figimpacts",
+  "chapter": "SPM",
+  "figure": "Impacts",
+  "variant": "",
+  "label": "Fig. SPM.Impacts",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_SPM_Figure_Impacts_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_SPM_Figure_Impacts_v1.png"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_SPM_Figure_Impacts_v2.jpg"
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_SPM_Figure_Impacts_v3.jpg"
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_SPM_Figure_Impacts_v4.jpg"
+   }
+  ]
+ },
+ {
+  "id": "chSPM-figmaps",
+  "chapter": "SPM",
+  "figure": "Maps",
+  "variant": "",
+  "label": "Fig. SPM.Maps",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_SPM_Figure_Maps_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_SPM_Figure_Maps_v1.png"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_SPM_Figure_Maps_v2.jpg"
+   }
+  ]
+ },
+ {
+  "id": "chSPM-figmechanism",
+  "chapter": "SPM",
+  "figure": "Mechanism",
+  "variant": "",
+  "label": "Fig. SPM.Mechanism",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_SPM_Figure_Mechanism_v0.png"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_SPM_Figure_Mechanism_v1.jpg"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_SPM_Figure_Mechanism_v2.jpg"
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_SPM_Figure_Mechanism_v3.jpg"
+   }
+  ]
+ },
+ {
+  "id": "chSPM-figstorylines",
+  "chapter": "SPM",
+  "figure": "Storylines",
+  "variant": "",
+  "label": "Fig. SPM.Storylines",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_SPM_Figure_Storylines_v0.jpg"
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_SPM_Figure_Storylines_v1.jpg"
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_SPM_Figure_Storylines_v2.jpg"
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_SPM_Figure_Storylines_v3.jpg"
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_SPM_Figure_Storylines_v4.jpg"
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_SPM_Figure_Storylines_v5.jpg"
+   },
+   {
+    "v": 6,
+    "file": "figures/Ch_SPM_Figure_Storylines_v6.jpg"
+   },
+   {
+    "v": 7,
+    "file": "figures/Ch_SPM_Figure_Storylines_v7.jpg"
    }
   ]
  }
