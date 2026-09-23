@@ -36,11 +36,11 @@ window.AMOC_FIGURES = [
   ]
  },
  {
-  "id": "ch1-fig3",
+  "id": "ch1-fig4",
   "chapter": 1,
-  "figure": 3,
+  "figure": 4,
   "variant": "",
-  "label": "Fig. 1.3",
+  "label": "Fig. 1.4",
   "title": "Placeholder title",
   "caption": "Impacts of strong AMOC decline and global warming on physical and biological systems in the Atlantic realm and through teleconnections to Asia. Figure adapted from (Collins et al., 2019).",
   "notes": "",
@@ -49,11 +49,11 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_1_Figure_3_v0.png"
+    "file": "figures/Ch_1_Figure_4_v0.png"
    },
    {
     "v": 1,
-    "file": "figures/Ch_1_Figure_3_v1.jpg"
+    "file": "figures/Ch_1_Figure_4_v1.jpg"
    }
   ]
  },
