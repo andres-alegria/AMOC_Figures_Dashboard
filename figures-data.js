@@ -532,24 +532,6 @@ window.AMOC_FIGURES = [
   ]
  },
  {
-  "id": "ch5-fig1",
-  "chapter": 5,
-  "figure": 1,
-  "variant": "",
-  "label": "Fig. 5.1",
-  "title": "Placeholder title",
-  "caption": "Globally average near-surface air temperature (left axis) against AMOC strength (right axis). AMOC strength index is computed as the yearly average maximum of the meridional overturning streamfunction at 26.5°N below 500m. Only the first 100 years of the simulations are shown.",
-  "notes": "",
-  "contact": "",
-  "date": "10.July",
-  "versions": [
-   {
-    "v": 0,
-    "file": "figures/Ch_5_Figure_1_v0.png"
-   }
-  ]
- },
- {
   "id": "ch5-fig2",
   "chapter": 5,
   "figure": 2,
