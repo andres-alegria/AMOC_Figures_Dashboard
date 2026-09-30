@@ -104,6 +104,7 @@ a{color:#2038A8}a:hover{color:#E87722}
                 <sc-for list="{{ d.sel.verChips }}" as="v" hint-placeholder-count="1">
                   <button onClick="{{ v.on }}" style="padding:4px 10px;border-radius:6px;cursor:pointer;font-family:inherit;font-weight:700;font-size:11.5px;border:1px solid {{ v.bd }};background:{{ v.bg }};color:{{ v.fg }}">{{ v.label }}</button>
                 </sc-for>
+                {{ d.sel.dlEl }}
               </div>
             </div>
             <div style="flex:1 1 240px;min-height:120px;max-height:420px;display:flex;align-items:center;justify-content:center;background:#f7f8fc;padding:16px;overflow:hidden">
@@ -451,6 +452,19 @@ class Component extends DCLogic {
       draft: s.drafts[f.id] || '',
       draftOn: (e) => this.setState({ drafts: { ...this.state.drafts, [f.id]: e.target.value } }),
       addOn: () => this.addComment(f.id, f.label),
+      // download the version currently being viewed (the latest one by default)
+      dlEl: (hasImg && cur.file) ? React.createElement('a', {
+        href: cur.file,
+        download: cur.file.split('/').pop(),
+        title: 'Download ' + cur.file.split('/').pop(),
+        // ---- adjust download button colours/spacing here ----
+        style: {
+          display: 'inline-flex', alignItems: 'center', gap: '5px',
+          padding: '4px 10px', borderRadius: '6px', border: '1px solid rgba(20,35,92,.2)',
+          background: '#fff', color: '#14235C', font: 'inherit', fontSize: '11.5px',
+          fontWeight: 700, textDecoration: 'none', whiteSpace: 'nowrap'
+        }
+      }, '\u2193 Download v' + cur.v) : null,
       verChips: versions.map((v, i) => ({
         label: 'v' + v.v,
         bd: i === vi ? '#2038A8' : 'rgba(20,35,92,.2)',
