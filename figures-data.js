@@ -274,11 +274,11 @@ window.AMOC_FIGURES = [
   ]
  },
  {
-  "id": "ch2-fig7",
+  "id": "ch2-fig8",
   "chapter": 2,
-  "figure": 7,
+  "figure": 8,
   "variant": "",
-  "label": "Fig. 2.7",
+  "label": "Fig. 2.8",
   "title": "Placeholder title",
   "caption": "Interglacial carbon isotope (δ13C) values measured in benthic foraminifera collected from sediment core IODP Site U1305 and MDXXXX collected from the Eirik Drift; southeast Greenland. MIS1 (0-7ka): red (Kleiven et al., 2008); MIS5 (116-123): blue (Galaasen et al., 2014); MIS7 (235-243): green; MIS9 (320-328): purple; MIS11 (395-415): yellow (Galaasen et al., 2020). High values at this location primarily reflect the production of well-ventilated Lower North Atlantic Deep Water   emanating from the Nordic Seas and a deep overturning cell in the subpolar North Atlantic.",
   "notes": "Beyond its current vigor, the Holocene interglacial has also been exceptionally stable relative to the last half-million years. This unique stability is visually demonstrated through a histogram distribution of δ13C values (Fig. 2.7).",
@@ -287,7 +287,7 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_2_Figure_7_v0.jpeg"
+    "file": "figures/Ch_2_Figure_8_v0.jpeg"
    }
   ]
  },
