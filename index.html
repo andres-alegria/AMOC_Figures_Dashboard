@@ -429,7 +429,7 @@ class Component extends DCLogic {
         // no thumbnail yet (fresh version) -> fall back to the full-res file
         if (latest && e.target.src.indexOf('thumbs/') !== -1) e.target.src = latest.file;
       },
-      isNew: !!latest && latest.v > 0,
+      isNew: !!latest && !!this.newIds && this.newIds.has(f.id),
       latestLabel: latest ? 'v' + latest.v : '',
       status, stBg, stFg,
       statusShort: hasImg ? stSel.toLowerCase() : 'file missing',
@@ -493,6 +493,16 @@ class Component extends DCLogic {
         || name(a).localeCompare(name(b))
         || (a.variant || '').localeCompare(b.variant || '');
     });
+    // "NEW" badge goes to the most recently updated figures only
+    // ---- adjust how many figures carry the badge here ----
+    const NEW_BADGE_COUNT = 5;
+    const updatedAt = (f) => this.allVersions(f).reduce(
+      // a version found by probing has no mtime yet: treat it as just-added
+      (t, v) => Math.max(t, v.mtime == null ? Infinity : v.mtime), 0);
+    this.newIds = new Set(all.filter(f => updatedAt(f) > 0)
+      .sort((a, b) => updatedAt(b) - updatedAt(a))
+      .slice(0, NEW_BADGE_COUNT).map(f => f.id));
+
     const chapters = [1, 2, 3, 4, 5, 6, 'SPM'];
     const requireGate = this.props.requirePassphrase ?? true;
     const unlocked = s.unlocked || !requireGate;

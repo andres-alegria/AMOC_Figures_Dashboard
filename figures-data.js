@@ -13,27 +13,33 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_1_Figure_1_v0.png"
+    "file": "figures/Ch_1_Figure_1_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_1_Figure_1_v1.jpg"
+    "file": "figures/Ch_1_Figure_1_v1.jpg",
+    "mtime": 1789725409
    },
    {
     "v": 2,
-    "file": "figures/Ch_1_Figure_1_v2.jpg"
+    "file": "figures/Ch_1_Figure_1_v2.jpg",
+    "mtime": 1789728624
    },
    {
     "v": 3,
-    "file": "figures/Ch_1_Figure_1_v3.jpg"
+    "file": "figures/Ch_1_Figure_1_v3.jpg",
+    "mtime": 1789746641
    },
    {
     "v": 4,
-    "file": "figures/Ch_1_Figure_1_v4.jpg"
+    "file": "figures/Ch_1_Figure_1_v4.jpg",
+    "mtime": 1790092613
    },
    {
     "v": 5,
-    "file": "figures/Ch_1_Figure_1_v5.jpg"
+    "file": "figures/Ch_1_Figure_1_v5.jpg",
+    "mtime": 1790260583
    }
   ]
  },
@@ -51,11 +57,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_1_Figure_2_v0.png"
+    "file": "figures/Ch_1_Figure_2_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_1_Figure_2_v1.jpg"
+    "file": "figures/Ch_1_Figure_2_v1.jpg",
+    "mtime": 1790173933
    }
   ]
  },
@@ -73,19 +81,23 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_1_Figure_3_v0.png"
+    "file": "figures/Ch_1_Figure_3_v0.png",
+    "mtime": 1790149614
    },
    {
     "v": 1,
-    "file": "figures/Ch_1_Figure_3_v1.jpg"
+    "file": "figures/Ch_1_Figure_3_v1.jpg",
+    "mtime": 1790172104
    },
    {
     "v": 2,
-    "file": "figures/Ch_1_Figure_3_v2.jpg"
+    "file": "figures/Ch_1_Figure_3_v2.jpg",
+    "mtime": 1790259013
    },
    {
     "v": 3,
-    "file": "figures/Ch_1_Figure_3_v3.jpg"
+    "file": "figures/Ch_1_Figure_3_v3.jpg",
+    "mtime": 1790259612
    }
   ]
  },
@@ -103,19 +115,23 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_1_Figure_4_v0.png"
+    "file": "figures/Ch_1_Figure_4_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_1_Figure_4_v1.jpg"
+    "file": "figures/Ch_1_Figure_4_v1.jpg",
+    "mtime": 1789723650
    },
    {
     "v": 2,
-    "file": "figures/Ch_1_Figure_4_v2.jpg"
+    "file": "figures/Ch_1_Figure_4_v2.jpg",
+    "mtime": 1789763817
    },
    {
     "v": 3,
-    "file": "figures/Ch_1_Figure_4_v3.jpg"
+    "file": "figures/Ch_1_Figure_4_v3.jpg",
+    "mtime": 1790258119
    }
   ]
  },
@@ -133,19 +149,23 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_1_Figure_5_v0.png"
+    "file": "figures/Ch_1_Figure_5_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_1_Figure_5_v1.jpg"
+    "file": "figures/Ch_1_Figure_5_v1.jpg",
+    "mtime": 1789829422
    },
    {
     "v": 2,
-    "file": "figures/Ch_1_Figure_5_v2.jpg"
+    "file": "figures/Ch_1_Figure_5_v2.jpg",
+    "mtime": 1790148943
    },
    {
     "v": 3,
-    "file": "figures/Ch_1_Figure_5_v3.jpg"
+    "file": "figures/Ch_1_Figure_5_v3.jpg",
+    "mtime": 1790742705
    }
   ]
  },
@@ -163,15 +183,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_2_Figure_1_v0.png"
+    "file": "figures/Ch_2_Figure_1_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_2_Figure_1_v1.jpg"
+    "file": "figures/Ch_2_Figure_1_v1.jpg",
+    "mtime": 1789760287
    },
    {
     "v": 2,
-    "file": "figures/Ch_2_Figure_1_v2.jpg"
+    "file": "figures/Ch_2_Figure_1_v2.jpg",
+    "mtime": 1790745852
    }
   ]
  },
@@ -189,19 +212,23 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_2_Figure_2_v0.png"
+    "file": "figures/Ch_2_Figure_2_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_2_Figure_2_v1.jpg"
+    "file": "figures/Ch_2_Figure_2_v1.jpg",
+    "mtime": 1791819410
    },
    {
     "v": 2,
-    "file": "figures/Ch_2_Figure_2_v2.jpg"
+    "file": "figures/Ch_2_Figure_2_v2.jpg",
+    "mtime": 1789829691
    },
    {
     "v": 3,
-    "file": "figures/Ch_2_Figure_2_v3.jpg"
+    "file": "figures/Ch_2_Figure_2_v3.jpg",
+    "mtime": 1791808538
    }
   ]
  },
@@ -219,7 +246,8 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 1,
-    "file": "figures/Ch_2_Figure_3_v1.jpg"
+    "file": "figures/Ch_2_Figure_3_v1.jpg",
+    "mtime": 1791807961
    }
   ]
  },
@@ -237,11 +265,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_2_Figure_4_v0.png"
+    "file": "figures/Ch_2_Figure_4_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_2_Figure_4_v1.jpg"
+    "file": "figures/Ch_2_Figure_4_v1.jpg",
+    "mtime": 1789827558
    }
   ]
  },
@@ -259,15 +289,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_2_Figure_5_v0.jpeg"
+    "file": "figures/Ch_2_Figure_5_v0.jpeg",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_2_Figure_5_v1.jpg"
+    "file": "figures/Ch_2_Figure_5_v1.jpg",
+    "mtime": 1789749740
    },
    {
     "v": 2,
-    "file": "figures/Ch_2_Figure_5_v2.jpg"
+    "file": "figures/Ch_2_Figure_5_v2.jpg",
+    "mtime": 1790746126
    }
   ]
  },
@@ -285,11 +318,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_2_Figure_6_v0.png"
+    "file": "figures/Ch_2_Figure_6_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_2_Figure_6_v1.jpg"
+    "file": "figures/Ch_2_Figure_6_v1.jpg",
+    "mtime": 1791821976
    }
   ]
  },
@@ -307,11 +342,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_2_Figure_7_v0.png"
+    "file": "figures/Ch_2_Figure_7_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_2_Figure_7_v1.jpg"
+    "file": "figures/Ch_2_Figure_7_v1.jpg",
+    "mtime": 1791821994
    }
   ]
  },
@@ -329,11 +366,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_2_Figure_8_v0.jpeg"
+    "file": "figures/Ch_2_Figure_8_v0.jpeg",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_2_Figure_8_v1.jpg"
+    "file": "figures/Ch_2_Figure_8_v1.jpg",
+    "mtime": 1791818805
    }
   ]
  },
@@ -351,7 +390,8 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_3_Figure_1_v0.png"
+    "file": "figures/Ch_3_Figure_1_v0.png",
+    "mtime": 1783943048
    }
   ]
  },
@@ -369,7 +409,8 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_3_Figure_2_v0.png"
+    "file": "figures/Ch_3_Figure_2_v0.png",
+    "mtime": 1783943048
    }
   ]
  },
@@ -387,15 +428,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_3_Figure_3_v0.png"
+    "file": "figures/Ch_3_Figure_3_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_3_Figure_3_v1.jpg"
+    "file": "figures/Ch_3_Figure_3_v1.jpg",
+    "mtime": 1790762365
    },
    {
     "v": 2,
-    "file": "figures/Ch_3_Figure_3_v2.jpg"
+    "file": "figures/Ch_3_Figure_3_v2.jpg",
+    "mtime": 1790761703
    }
   ]
  },
@@ -413,11 +457,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_3_Figure_4_v0.png"
+    "file": "figures/Ch_3_Figure_4_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_3_Figure_4_v1.jpg"
+    "file": "figures/Ch_3_Figure_4_v1.jpg",
+    "mtime": 1789760613
    }
   ]
  },
@@ -435,7 +481,8 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_3_Figure_5_v0.png"
+    "file": "figures/Ch_3_Figure_5_v0.png",
+    "mtime": 1783943048
    }
   ]
  },
@@ -453,11 +500,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_3_Figure_6_v0.png"
+    "file": "figures/Ch_3_Figure_6_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_3_Figure_6_v1.jpg"
+    "file": "figures/Ch_3_Figure_6_v1.jpg",
+    "mtime": 1791820254
    }
   ]
  },
@@ -475,7 +524,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_3_Figure_7_v0.png"
+    "file": "figures/Ch_3_Figure_7_v0.png",
+    "mtime": 1783943048
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_3_Figure_7_v1.jpg",
+    "mtime": 1791896756
    }
   ]
  },
@@ -493,23 +548,28 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_3_Figure_8_v0.png"
+    "file": "figures/Ch_3_Figure_8_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_3_Figure_8_v1.png"
+    "file": "figures/Ch_3_Figure_8_v1.png",
+    "mtime": 1790319149
    },
    {
     "v": 2,
-    "file": "figures/Ch_3_Figure_8_v2.jpg"
+    "file": "figures/Ch_3_Figure_8_v2.jpg",
+    "mtime": 1790604115
    },
    {
     "v": 3,
-    "file": "figures/Ch_3_Figure_8_v3.jpg"
+    "file": "figures/Ch_3_Figure_8_v3.jpg",
+    "mtime": 1790758075
    },
    {
     "v": 4,
-    "file": "figures/Ch_3_Figure_8_v4.jpg"
+    "file": "figures/Ch_3_Figure_8_v4.jpg",
+    "mtime": 1790761924
    }
   ]
  },
@@ -527,15 +587,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_4_Figure_1_v0.png"
+    "file": "figures/Ch_4_Figure_1_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_4_Figure_1_v1.jpg"
+    "file": "figures/Ch_4_Figure_1_v1.jpg",
+    "mtime": 1790662103
    },
    {
     "v": 2,
-    "file": "figures/Ch_4_Figure_1_v2.jpg"
+    "file": "figures/Ch_4_Figure_1_v2.jpg",
+    "mtime": 1790747622
    }
   ]
  },
@@ -553,11 +616,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_4_Figure_2_v0.png"
+    "file": "figures/Ch_4_Figure_2_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_4_Figure_2_v1.jpg"
+    "file": "figures/Ch_4_Figure_2_v1.jpg",
+    "mtime": 1789897731
    }
   ]
  },
@@ -575,15 +640,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_4_Figure_3_v0.png"
+    "file": "figures/Ch_4_Figure_3_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_4_Figure_3_v1.jpg"
+    "file": "figures/Ch_4_Figure_3_v1.jpg",
+    "mtime": 1789987674
    },
    {
     "v": 2,
-    "file": "figures/Ch_4_Figure_3_v2.jpg"
+    "file": "figures/Ch_4_Figure_3_v2.jpg",
+    "mtime": 1790775405
    }
   ]
  },
@@ -601,11 +669,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_4_Figure_4_v0.png"
+    "file": "figures/Ch_4_Figure_4_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_4_Figure_4_v1.jpg"
+    "file": "figures/Ch_4_Figure_4_v1.jpg",
+    "mtime": 1790232267
    }
   ]
  },
@@ -623,7 +693,8 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_4_Figure_5_v0.png"
+    "file": "figures/Ch_4_Figure_5_v0.png",
+    "mtime": 1783943048
    }
   ]
  },
@@ -641,7 +712,8 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_4_Figure_6_v0.png"
+    "file": "figures/Ch_4_Figure_6_v0.png",
+    "mtime": 1783943048
    }
   ]
  },
@@ -659,11 +731,13 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_5_Figure_1_v0.png"
+    "file": "figures/Ch_5_Figure_1_v0.png",
+    "mtime": 1790614821
    },
    {
     "v": 1,
-    "file": "figures/Ch_5_Figure_1_v1.jpg"
+    "file": "figures/Ch_5_Figure_1_v1.jpg",
+    "mtime": 1790619739
    }
   ]
  },
@@ -681,7 +755,8 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_5_Figure_2_v0.png"
+    "file": "figures/Ch_5_Figure_2_v0.png",
+    "mtime": 1783943048
    }
   ]
  },
@@ -699,7 +774,8 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_5_Figure_3_v0.png"
+    "file": "figures/Ch_5_Figure_3_v0.png",
+    "mtime": 1783943048
    }
   ]
  },
@@ -717,15 +793,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_6_Figure_1_v0.png"
+    "file": "figures/Ch_6_Figure_1_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_6_Figure_1_v1.jpg"
+    "file": "figures/Ch_6_Figure_1_v1.jpg",
+    "mtime": 1789723947
    },
    {
     "v": 2,
-    "file": "figures/Ch_6_Figure_1_v2.jpg"
+    "file": "figures/Ch_6_Figure_1_v2.jpg",
+    "mtime": 1791175604
    }
   ]
  },
@@ -743,15 +822,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_6_Figure_2_v0.png"
+    "file": "figures/Ch_6_Figure_2_v0.png",
+    "mtime": 1790317087
    },
    {
     "v": 1,
-    "file": "figures/Ch_6_Figure_2_v1.jpg"
+    "file": "figures/Ch_6_Figure_2_v1.jpg",
+    "mtime": 1790338863
    },
    {
     "v": 2,
-    "file": "figures/Ch_6_Figure_2_v2.jpg"
+    "file": "figures/Ch_6_Figure_2_v2.jpg",
+    "mtime": 1790942466
    }
   ]
  },
@@ -769,15 +851,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_6_Figure_3_v0.png"
+    "file": "figures/Ch_6_Figure_3_v0.png",
+    "mtime": 1791178977
    },
    {
     "v": 1,
-    "file": "figures/Ch_6_Figure_3_v1.jpg"
+    "file": "figures/Ch_6_Figure_3_v1.jpg",
+    "mtime": 1790942687
    },
    {
     "v": 2,
-    "file": "figures/Ch_6_Figure_3_v2.jpg"
+    "file": "figures/Ch_6_Figure_3_v2.jpg",
+    "mtime": 1790961180
    }
   ]
  },
@@ -795,15 +880,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_6_Figure_4_v0.png"
+    "file": "figures/Ch_6_Figure_4_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_6_Figure_4_v1.jpg"
+    "file": "figures/Ch_6_Figure_4_v1.jpg",
+    "mtime": 1789416862
    },
    {
     "v": 2,
-    "file": "figures/Ch_6_Figure_4_v2.jpg"
+    "file": "figures/Ch_6_Figure_4_v2.jpg",
+    "mtime": 1790942594
    }
   ]
  },
@@ -821,19 +909,23 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_SPM_Figure_AMOC_v0.png"
+    "file": "figures/Ch_SPM_Figure_AMOC_v0.png",
+    "mtime": 1783943048
    },
    {
     "v": 1,
-    "file": "figures/Ch_SPM_Figure_AMOC_v1.png"
+    "file": "figures/Ch_SPM_Figure_AMOC_v1.png",
+    "mtime": 1789385850
    },
    {
     "v": 2,
-    "file": "figures/Ch_SPM_Figure_AMOC_v2.jpg"
+    "file": "figures/Ch_SPM_Figure_AMOC_v2.jpg",
+    "mtime": 1789379222
    },
    {
     "v": 3,
-    "file": "figures/Ch_SPM_Figure_AMOC_v3.jpg"
+    "file": "figures/Ch_SPM_Figure_AMOC_v3.jpg",
+    "mtime": 1791175178
    }
   ]
  },
@@ -851,23 +943,28 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_SPM_Figure_CRD_v0.png"
+    "file": "figures/Ch_SPM_Figure_CRD_v0.png",
+    "mtime": 1789367374
    },
    {
     "v": 1,
-    "file": "figures/Ch_SPM_Figure_CRD_v1.jpg"
+    "file": "figures/Ch_SPM_Figure_CRD_v1.jpg",
+    "mtime": 1789290020
    },
    {
     "v": 2,
-    "file": "figures/Ch_SPM_Figure_CRD_v2.jpg"
+    "file": "figures/Ch_SPM_Figure_CRD_v2.jpg",
+    "mtime": 1789381932
    },
    {
     "v": 3,
-    "file": "figures/Ch_SPM_Figure_CRD_v3.jpg"
+    "file": "figures/Ch_SPM_Figure_CRD_v3.jpg",
+    "mtime": 1789416862
    },
    {
     "v": 4,
-    "file": "figures/Ch_SPM_Figure_CRD_v4.jpg"
+    "file": "figures/Ch_SPM_Figure_CRD_v4.jpg",
+    "mtime": 1791193037
    }
   ]
  },
@@ -885,31 +982,38 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_SPM_Figure_Impacts_v0.png"
+    "file": "figures/Ch_SPM_Figure_Impacts_v0.png",
+    "mtime": 1789385971
    },
    {
     "v": 1,
-    "file": "figures/Ch_SPM_Figure_Impacts_v1.png"
+    "file": "figures/Ch_SPM_Figure_Impacts_v1.png",
+    "mtime": 1789385892
    },
    {
     "v": 2,
-    "file": "figures/Ch_SPM_Figure_Impacts_v2.jpg"
+    "file": "figures/Ch_SPM_Figure_Impacts_v2.jpg",
+    "mtime": 1789379201
    },
    {
     "v": 3,
-    "file": "figures/Ch_SPM_Figure_Impacts_v3.jpg"
+    "file": "figures/Ch_SPM_Figure_Impacts_v3.jpg",
+    "mtime": 1789416872
    },
    {
     "v": 4,
-    "file": "figures/Ch_SPM_Figure_Impacts_v4.jpg"
+    "file": "figures/Ch_SPM_Figure_Impacts_v4.jpg",
+    "mtime": 1789538902
    },
    {
     "v": 5,
-    "file": "figures/Ch_SPM_Figure_Impacts_v5.jpg"
+    "file": "figures/Ch_SPM_Figure_Impacts_v5.jpg",
+    "mtime": 1791192351
    },
    {
     "v": 6,
-    "file": "figures/Ch_SPM_Figure_Impacts_v6.jpg"
+    "file": "figures/Ch_SPM_Figure_Impacts_v6.jpg",
+    "mtime": 1791212207
    }
   ]
  },
@@ -927,19 +1031,23 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_SPM_Figure_Maps_v0.png"
+    "file": "figures/Ch_SPM_Figure_Maps_v0.png",
+    "mtime": 1789385705
    },
    {
     "v": 1,
-    "file": "figures/Ch_SPM_Figure_Maps_v1.png"
+    "file": "figures/Ch_SPM_Figure_Maps_v1.png",
+    "mtime": 1789385773
    },
    {
     "v": 2,
-    "file": "figures/Ch_SPM_Figure_Maps_v2.jpg"
+    "file": "figures/Ch_SPM_Figure_Maps_v2.jpg",
+    "mtime": 1789379193
    },
    {
     "v": 3,
-    "file": "figures/Ch_SPM_Figure_Maps_v3.jpg"
+    "file": "figures/Ch_SPM_Figure_Maps_v3.jpg",
+    "mtime": 1791192966
    }
   ]
  },
@@ -957,23 +1065,28 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_SPM_Figure_Mechanism_v0.png"
+    "file": "figures/Ch_SPM_Figure_Mechanism_v0.png",
+    "mtime": 1789385562
    },
    {
     "v": 1,
-    "file": "figures/Ch_SPM_Figure_Mechanism_v1.jpg"
+    "file": "figures/Ch_SPM_Figure_Mechanism_v1.jpg",
+    "mtime": 1789379754
    },
    {
     "v": 2,
-    "file": "figures/Ch_SPM_Figure_Mechanism_v2.jpg"
+    "file": "figures/Ch_SPM_Figure_Mechanism_v2.jpg",
+    "mtime": 1789401566
    },
    {
     "v": 3,
-    "file": "figures/Ch_SPM_Figure_Mechanism_v3.jpg"
+    "file": "figures/Ch_SPM_Figure_Mechanism_v3.jpg",
+    "mtime": 1789538909
    },
    {
     "v": 4,
-    "file": "figures/Ch_SPM_Figure_Mechanism_v4.jpg"
+    "file": "figures/Ch_SPM_Figure_Mechanism_v4.jpg",
+    "mtime": 1791194057
    }
   ]
  },
@@ -991,35 +1104,43 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_SPM_Figure_Storylines_v0.jpg"
+    "file": "figures/Ch_SPM_Figure_Storylines_v0.jpg",
+    "mtime": 1789383937
    },
    {
     "v": 1,
-    "file": "figures/Ch_SPM_Figure_Storylines_v1.jpg"
+    "file": "figures/Ch_SPM_Figure_Storylines_v1.jpg",
+    "mtime": 1789475210
    },
    {
     "v": 2,
-    "file": "figures/Ch_SPM_Figure_Storylines_v2.jpg"
+    "file": "figures/Ch_SPM_Figure_Storylines_v2.jpg",
+    "mtime": 1789474373
    },
    {
     "v": 3,
-    "file": "figures/Ch_SPM_Figure_Storylines_v3.jpg"
+    "file": "figures/Ch_SPM_Figure_Storylines_v3.jpg",
+    "mtime": 1789483709
    },
    {
     "v": 4,
-    "file": "figures/Ch_SPM_Figure_Storylines_v4.jpg"
+    "file": "figures/Ch_SPM_Figure_Storylines_v4.jpg",
+    "mtime": 1789497751
    },
    {
     "v": 5,
-    "file": "figures/Ch_SPM_Figure_Storylines_v5.jpg"
+    "file": "figures/Ch_SPM_Figure_Storylines_v5.jpg",
+    "mtime": 1789538994
    },
    {
     "v": 6,
-    "file": "figures/Ch_SPM_Figure_Storylines_v6.jpg"
+    "file": "figures/Ch_SPM_Figure_Storylines_v6.jpg",
+    "mtime": 1789544586
    },
    {
     "v": 7,
-    "file": "figures/Ch_SPM_Figure_Storylines_v7.jpg"
+    "file": "figures/Ch_SPM_Figure_Storylines_v7.jpg",
+    "mtime": 1789547553
    }
   ]
  }

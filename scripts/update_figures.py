@@ -46,7 +46,9 @@ def main():
             num, var = m.group(4), ''   # named figure, e.g. CRD
         fid = 'ch{}-fig{}{}'.format(ch, str(num).lower(), var)
         found.setdefault(fid, {'ch': ch, 'num': num, 'var': var, 'versions': []})
-        found[fid]['versions'].append({'v': ver, 'file': 'figures/' + name})
+        # mtime lets the dashboard mark only the most recently updated figures as new
+        mtime = int(os.path.getmtime(os.path.join(FIG_DIR, name)))
+        found[fid]['versions'].append({'v': ver, 'file': 'figures/' + name, 'mtime': mtime})
 
     for fid, info in found.items():
         versions = sorted(info['versions'], key=lambda v: v['v'])
