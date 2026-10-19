@@ -1,4 +1,18 @@
 Submitted At,Name,Comment,Figure,Subject
+2026-10-16T11:03:35.046Z,Jon Robson,"some other small comments. 
+
+Title - maybe should just be ""Projected AMOC change up to 2300 using extended CMIP6 scenarios""
+
+the dots on the right should be ""for each individual simulation"" (some models have multiple members)
+
+on the bottom left ""thin lines are..."" Remove from ""thick lines... "" as there is no multi-model mean on here anymore",Fig. 3.3,Fig. 3.3
+2026-10-16T11:01:26.629Z,Jon Robson,"My main comment about this is that the colours are a bit washed out making the contrast seem quite low. 
+
+I think the main reason for that is because you've tried to include the lables for the different scenarios on the plot its self over the lines. 
+
+So, maybe a good way to do it is to have the scenario names across the top, like in the original from Gaurav?
+
+Also, just to say, the grey shading is SSP5-8.5, but its labeld as SSP2-4.5 here",Fig. 3.3,Fig. 3.3
 2026-10-05T12:46:42.980Z,Andrés,Back to the original angle.,Fig. 3.4,Fig. 3.4
 2026-10-05T12:42:14.520Z,Andrés,Remove left Panel. Keep the text in Fig 3.1.,Fig. 3.4,Fig. 3.4
 2026-10-05T12:40:37.282Z,Andrés,Remove the RAPID (all the observation systems) - place these in Fig 3.1.,Fig. 3.4,Fig. 3.4
