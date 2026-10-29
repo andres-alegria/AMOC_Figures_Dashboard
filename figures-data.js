@@ -40,6 +40,11 @@ window.AMOC_FIGURES = [
     "v": 5,
     "file": "figures/Ch_1_Figure_1_v5.jpg",
     "mtime": 1790260583
+   },
+   {
+    "v": 6,
+    "file": "figures/Ch_1_Figure_1_v6.jpg",
+    "mtime": 1793308017
    }
   ]
  },
@@ -64,6 +69,11 @@ window.AMOC_FIGURES = [
     "v": 1,
     "file": "figures/Ch_1_Figure_2_v1.jpg",
     "mtime": 1790173933
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_1_Figure_2_v2.jpg",
+    "mtime": 1793308119
    }
   ]
  },
@@ -98,6 +108,11 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_1_Figure_3_v3.jpg",
     "mtime": 1790259612
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_1_Figure_3_v4.jpg",
+    "mtime": 1793308151
    }
   ]
  },
@@ -132,6 +147,16 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_1_Figure_4_v3.jpg",
     "mtime": 1790258119
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_1_Figure_4_v4.jpg",
+    "mtime": 1793025052
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_1_Figure_4_v5.jpg",
+    "mtime": 1793104754
    }
   ]
  },
@@ -166,6 +191,11 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_1_Figure_5_v3.jpg",
     "mtime": 1790742705
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_1_Figure_5_v4.jpg",
+    "mtime": 1793308174
    }
   ]
  },
@@ -195,6 +225,16 @@ window.AMOC_FIGURES = [
     "v": 2,
     "file": "figures/Ch_2_Figure_1_v2.jpg",
     "mtime": 1790745852
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_2_Figure_1_v3.jpg",
+    "mtime": 1792078423
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_2_Figure_1_v4.jpg",
+    "mtime": 1793307347
    }
   ]
  },
@@ -229,6 +269,16 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_2_Figure_2_v3.jpg",
     "mtime": 1791808538
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_2_Figure_2_v4.jpg",
+    "mtime": 1792078437
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_2_Figure_2_v5.jpg",
+    "mtime": 1792416397
    }
   ]
  },
@@ -301,6 +351,16 @@ window.AMOC_FIGURES = [
     "v": 2,
     "file": "figures/Ch_2_Figure_5_v2.jpg",
     "mtime": 1790746126
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_2_Figure_5_v3.jpg",
+    "mtime": 1792078283
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_2_Figure_5_v4.jpg",
+    "mtime": 1793300241
    }
   ]
  },
@@ -531,6 +591,11 @@ window.AMOC_FIGURES = [
     "v": 1,
     "file": "figures/Ch_3_Figure_7_v1.jpg",
     "mtime": 1791896756
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_3_Figure_7_v2.jpg",
+    "mtime": 1792078476
    }
   ]
  },
