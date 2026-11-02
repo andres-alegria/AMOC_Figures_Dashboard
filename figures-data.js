@@ -200,6 +200,88 @@ window.AMOC_FIGURES = [
   ]
  },
  {
+  "id": "ch1-figembers",
+  "chapter": 1,
+  "figure": "Embers",
+  "variant": "",
+  "label": "Fig. 1.Embers",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_1_Figure_Embers_v0.png",
+    "mtime": 1793342719
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_1_Figure_Embers_v1.jpg",
+    "mtime": 1793348289
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_1_Figure_Embers_v2.jpg",
+    "mtime": 1793539101
+   }
+  ]
+ },
+ {
+  "id": "ch1-figpropeller",
+  "chapter": 1,
+  "figure": "Propeller",
+  "variant": "",
+  "label": "Fig. 1.Propeller",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_1_Figure_Propeller_v0.png",
+    "mtime": 1793308835
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_1_Figure_Propeller_v1.jpg",
+    "mtime": 1793308915
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_1_Figure_Propeller_v2.jpg",
+    "mtime": 1793308956
+   }
+  ]
+ },
+ {
+  "id": "ch1-figtimeline",
+  "chapter": 1,
+  "figure": "Timeline",
+  "variant": "",
+  "label": "Fig. 1.Timeline",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_1_Figure_Timeline_v0.png",
+    "mtime": 1793535106
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_1_Figure_Timeline_v1.jpg",
+    "mtime": 1793553777
+   }
+  ]
+ },
+ {
   "id": "ch2-fig1",
   "chapter": 2,
   "figure": 1,
@@ -235,6 +317,11 @@ window.AMOC_FIGURES = [
     "v": 4,
     "file": "figures/Ch_2_Figure_1_v4.jpg",
     "mtime": 1793307347
+   },
+   {
+    "v": 6,
+    "file": "figures/Ch_2_Figure_1_v6.jpg",
+    "mtime": 1793558755
    }
   ]
  },
@@ -258,7 +345,7 @@ window.AMOC_FIGURES = [
    {
     "v": 1,
     "file": "figures/Ch_2_Figure_2_v1.jpg",
-    "mtime": 1791819410
+    "mtime": 1793617706
    },
    {
     "v": 2,
@@ -279,6 +366,11 @@ window.AMOC_FIGURES = [
     "v": 5,
     "file": "figures/Ch_2_Figure_2_v5.jpg",
     "mtime": 1792416397
+   },
+   {
+    "v": 6,
+    "file": "figures/Ch_2_Figure_2_v6.jpg",
+    "mtime": 1793559035
    }
   ]
  },
@@ -433,6 +525,11 @@ window.AMOC_FIGURES = [
     "v": 1,
     "file": "figures/Ch_2_Figure_8_v1.jpg",
     "mtime": 1791818805
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_2_Figure_8_v2.jpg",
+    "mtime": 1793552849
    }
   ]
  },
@@ -471,6 +568,11 @@ window.AMOC_FIGURES = [
     "v": 0,
     "file": "figures/Ch_3_Figure_2_v0.png",
     "mtime": 1783943048
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_3_Figure_2_v1.jpg",
+    "mtime": 1793615678
    }
   ]
  },
@@ -500,6 +602,11 @@ window.AMOC_FIGURES = [
     "v": 2,
     "file": "figures/Ch_3_Figure_3_v2.jpg",
     "mtime": 1790761703
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_3_Figure_3_v3.jpg",
+    "mtime": 1793615764
    }
   ]
  },
@@ -543,6 +650,11 @@ window.AMOC_FIGURES = [
     "v": 0,
     "file": "figures/Ch_3_Figure_5_v0.png",
     "mtime": 1783943048
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_3_Figure_5_v1.jpg",
+    "mtime": 1793560606
    }
   ]
  },
@@ -566,7 +678,7 @@ window.AMOC_FIGURES = [
    {
     "v": 1,
     "file": "figures/Ch_3_Figure_6_v1.jpg",
-    "mtime": 1791820254
+    "mtime": 1793617797
    }
   ]
  },
@@ -595,7 +707,7 @@ window.AMOC_FIGURES = [
    {
     "v": 2,
     "file": "figures/Ch_3_Figure_7_v2.jpg",
-    "mtime": 1792078476
+    "mtime": 1793617855
    }
   ]
  },
@@ -635,6 +747,11 @@ window.AMOC_FIGURES = [
     "v": 4,
     "file": "figures/Ch_3_Figure_8_v4.jpg",
     "mtime": 1790761924
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_3_Figure_8_v5.jpg",
+    "mtime": 1793618085
    }
   ]
  },
@@ -1206,6 +1323,11 @@ window.AMOC_FIGURES = [
     "v": 7,
     "file": "figures/Ch_SPM_Figure_Storylines_v7.jpg",
     "mtime": 1789547553
+   },
+   {
+    "v": 10,
+    "file": "figures/Ch_SPM_Figure_Storylines_v10.jpg",
+    "mtime": 1793554748
    }
   ]
  }
