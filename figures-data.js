@@ -157,6 +157,11 @@ window.AMOC_FIGURES = [
     "v": 5,
     "file": "figures/Ch_1_Figure_4_v5.jpg",
     "mtime": 1793104754
+   },
+   {
+    "v": 6,
+    "file": "figures/Ch_1_Figure_4_v6.jpg",
+    "mtime": 1793625550
    }
   ]
  },
@@ -196,6 +201,11 @@ window.AMOC_FIGURES = [
     "v": 4,
     "file": "figures/Ch_1_Figure_5_v4.jpg",
     "mtime": 1793308174
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_1_Figure_5_v5.jpg",
+    "mtime": 1793628308
    }
   ]
  },
