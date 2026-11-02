@@ -11,7 +11,9 @@ or manually:  python3 scripts/update_figures.py
   notes and contacts. New figures get empty metadata you can fill in by
   editing figures-data.js.
 - Generates a small JPEG thumbnail in thumbs/ for any figure file that
-  doesn't have one yet (needs Pillow: pip install Pillow).
+  doesn't have one yet, and rebuilds any thumbnail that is older than its
+  figure file - so replacing a figure in place without bumping the version
+  still refreshes the preview (needs Pillow: pip install Pillow).
 """
 import json, os, re, sys
 
@@ -78,19 +80,27 @@ def main():
         print('Pillow not installed - skipping thumbnails (pip install Pillow)')
         return
     os.makedirs(THUMB_DIR, exist_ok=True)
-    made = 0
+    made = stale = 0
     for rec in ordered:
         for v in rec['versions']:
             src = os.path.join(ROOT, v['file'])
             base = os.path.splitext(os.path.basename(v['file']))[0]
             dst = os.path.join(THUMB_DIR, base + '.jpg')
-            if os.path.exists(dst) or not os.path.exists(src):
+            if not os.path.exists(src):
                 continue
+            if os.path.exists(dst):
+                # a figure replaced in place keeps its version number, so compare
+                # timestamps instead of trusting that an existing thumb is current
+                if os.path.getmtime(dst) >= os.path.getmtime(src):
+                    continue
+                stale += 1
+            else:
+                made += 1
             img = Image.open(src).convert('RGB')
+            # ---- adjust thumbnail size / JPEG quality here ----
             img.thumbnail((560, 560))
             img.save(dst, 'JPEG', quality=72)
-            made += 1
-    print('thumbnails generated: {}'.format(made))
+    print('thumbnails: {} new, {} refreshed (figure file was newer)'.format(made, stale))
 
 if __name__ == '__main__':
     sys.exit(main())

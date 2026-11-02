@@ -345,7 +345,7 @@ window.AMOC_FIGURES = [
    {
     "v": 1,
     "file": "figures/Ch_2_Figure_2_v1.jpg",
-    "mtime": 1793617706
+    "mtime": 1793621399
    },
    {
     "v": 2,
@@ -751,7 +751,7 @@ window.AMOC_FIGURES = [
    {
     "v": 5,
     "file": "figures/Ch_3_Figure_8_v5.jpg",
-    "mtime": 1793618085
+    "mtime": 1793621697
    }
   ]
  },
