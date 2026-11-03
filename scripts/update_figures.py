@@ -9,7 +9,9 @@ or manually:  python3 scripts/update_figures.py
   or a text name starting with a letter, e.g. CRD, for figures not yet numbered)
 - Merges them into figures-data.js, PRESERVING existing titles, captions,
   notes and contacts. New figures get empty metadata you can fill in by
-  editing figures-data.js.
+  editing figures-data.js, and a figure whose files have all been deleted
+  is dropped from figures-data.js (delete its row in Figures.xlsx too, or
+  the dashboard will keep showing it as a figure with no file).
 - Generates a small JPEG thumbnail in thumbs/ for any figure file that
   doesn't have one yet, and rebuilds any thumbnail that is older than its
   figure file - so replacing a figure in place without bumping the version
@@ -51,6 +53,13 @@ def main():
         # mtime lets the dashboard mark only the most recently updated figures as new
         mtime = int(os.path.getmtime(os.path.join(FIG_DIR, name)))
         found[fid]['versions'].append({'v': ver, 'file': 'figures/' + name, 'mtime': mtime})
+
+    # a figure with no surviving file is gone: drop it rather than leaving a
+    # dead entry that the dashboard renders as "no file uploaded yet"
+    dropped = [fid for fid in records if fid not in found]
+    for fid in dropped:
+        print('dropped (no files left): {}  {}'.format(fid, records[fid].get('label', '')))
+        del records[fid]
 
     for fid, info in found.items():
         versions = sorted(info['versions'], key=lambda v: v['v'])
