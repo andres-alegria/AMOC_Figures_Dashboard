@@ -230,11 +230,11 @@ window.AMOC_FIGURES = [
   ]
  },
  {
-  "id": "ch1-figembers",
+  "id": "ch1-figpropeller",
   "chapter": 1,
-  "figure": "Embers",
+  "figure": "Propeller",
   "variant": "",
-  "label": "Fig. 1.Embers",
+  "label": "Fig. 1.Propeller",
   "title": "",
   "caption": "",
   "notes": "",
@@ -243,18 +243,18 @@ window.AMOC_FIGURES = [
   "versions": [
    {
     "v": 0,
-    "file": "figures/Ch_1_Figure_Embers_v0.png",
-    "mtime": 1793342719
+    "file": "figures/Ch_1_Figure_Propeller_v0.png",
+    "mtime": 1793308835
    },
    {
     "v": 1,
-    "file": "figures/Ch_1_Figure_Embers_v1.jpg",
-    "mtime": 1793348289
+    "file": "figures/Ch_1_Figure_Propeller_v1.jpg",
+    "mtime": 1793308915
    },
    {
     "v": 2,
-    "file": "figures/Ch_1_Figure_Embers_v2.jpg",
-    "mtime": 1793539101
+    "file": "figures/Ch_1_Figure_Propeller_v2.jpg",
+    "mtime": 1793308956
    }
   ]
  },
