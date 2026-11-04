@@ -259,35 +259,6 @@ window.AMOC_FIGURES = [
   ]
  },
  {
-  "id": "ch1-figpropeller",
-  "chapter": 1,
-  "figure": "Propeller",
-  "variant": "",
-  "label": "Fig. 1.Propeller",
-  "title": "",
-  "caption": "",
-  "notes": "",
-  "contact": "",
-  "date": "",
-  "versions": [
-   {
-    "v": 0,
-    "file": "figures/Ch_1_Figure_Propeller_v0.png",
-    "mtime": 1793308835
-   },
-   {
-    "v": 1,
-    "file": "figures/Ch_1_Figure_Propeller_v1.jpg",
-    "mtime": 1793308915
-   },
-   {
-    "v": 2,
-    "file": "figures/Ch_1_Figure_Propeller_v2.jpg",
-    "mtime": 1793308956
-   }
-  ]
- },
- {
   "id": "ch2-fig1",
   "chapter": 2,
   "figure": 1,
@@ -349,16 +320,6 @@ window.AMOC_FIGURES = [
     "mtime": 1783943048
    },
    {
-    "v": 1,
-    "file": "figures/Ch_2_Figure_2_v1.jpg",
-    "mtime": 1793621399
-   },
-   {
-    "v": 2,
-    "file": "figures/Ch_2_Figure_2_v2.jpg",
-    "mtime": 1789829691
-   },
-   {
     "v": 3,
     "file": "figures/Ch_2_Figure_2_v3.jpg",
     "mtime": 1791808538
@@ -393,9 +354,19 @@ window.AMOC_FIGURES = [
   "date": "10.July",
   "versions": [
    {
+    "v": 0,
+    "file": "figures/Ch_2_Figure_3_v0.png",
+    "mtime": 1793731894
+   },
+   {
     "v": 1,
     "file": "figures/Ch_2_Figure_3_v1.jpg",
     "mtime": 1791807961
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_2_Figure_3_v2.jpg",
+    "mtime": 1793731615
    }
   ]
  },
@@ -541,6 +512,11 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_2_Figure_8_v3.jpg",
     "mtime": 1793653404
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_2_Figure_8_v4.jpg",
+    "mtime": 1793729967
    }
   ]
  },
