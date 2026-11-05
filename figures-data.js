@@ -308,7 +308,7 @@ window.AMOC_FIGURES = [
    {
     "v": 7,
     "file": "figures/Ch_2_Figure_1_v7.jpg",
-    "mtime": 1793784439
+    "mtime": 1793790970
    }
   ]
  },
@@ -897,6 +897,30 @@ window.AMOC_FIGURES = [
   ]
  },
  {
+  "id": "ch4-figcessation",
+  "chapter": 4,
+  "figure": "Cessation",
+  "variant": "",
+  "label": "Fig. 4.Cessation",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_4_Figure_Cessation_v0.jpg",
+    "mtime": 1793820009
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_4_Figure_Cessation_v1.jpg",
+    "mtime": 1793820289
+   }
+  ]
+ },
+ {
   "id": "ch5-fig1",
   "chapter": 5,
   "figure": 1,
@@ -955,6 +979,30 @@ window.AMOC_FIGURES = [
     "v": 0,
     "file": "figures/Ch_5_Figure_3_v0.png",
     "mtime": 1783943048
+   }
+  ]
+ },
+ {
+  "id": "ch5-figimpacts",
+  "chapter": 5,
+  "figure": "Impacts",
+  "variant": "",
+  "label": "Fig. 5.Impacts",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 0,
+    "file": "figures/Ch_5_Figure_Impacts_v0.png",
+    "mtime": 1793792682
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_5_Figure_Impacts_v1.jpg",
+    "mtime": 1793794137
    }
   ]
  },
