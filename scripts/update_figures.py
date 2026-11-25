@@ -7,6 +7,8 @@ or manually:  python3 scripts/update_figures.py
 - Scans figures/ for files named  Ch_<chapter>_Figure_<id>_v<version>.(png|jpg|jpeg)
   (<chapter> is 1-6 or SPM; <id> is a number with optional letter, e.g. 3 or 4a,
   or a text name starting with a letter, e.g. CRD, for figures not yet numbered)
+- The report cover is the one exception: AMOC_Cover_v<version>.(png|jpg|jpeg)
+  becomes the single card of the dashboard's own "Cover" tab
 - Merges them into figures-data.js, PRESERVING existing titles, captions,
   notes and contacts. New figures get empty metadata you can fill in by
   editing figures-data.js, and a figure whose files have all been deleted
@@ -25,6 +27,8 @@ THUMB_DIR = os.path.join(ROOT, 'thumbs')
 DATA_JS = os.path.join(ROOT, 'figures-data.js')
 PATTERN = re.compile(
     r'^Ch_(\d+|SPM)_Figure_(?:(\d+)([a-z]?)|([A-Za-z][A-Za-z0-9-]*))_v(\d+)\.(png|jpe?g)$', re.I)
+# the cover does not belong to a chapter and keeps its own name
+COVER = re.compile(r'^AMOC_Cover_v(\d+)\.(png|jpe?g)$', re.I)
 
 def chapter_key(ch):
     return ch if ch == 'SPM' else int(ch)
@@ -40,15 +44,19 @@ def main():
     records = {r['id']: r for r in load_existing()}
     found = {}
     for name in sorted(os.listdir(FIG_DIR)):
-        m = PATTERN.match(name)
-        if not m:
-            continue
-        ch, ver = chapter_key(m.group(1)), int(m.group(5))
-        if m.group(2):
-            num, var = int(m.group(2)), m.group(3).lower()
+        cov = COVER.match(name)
+        if cov:
+            ch, num, var, ver, fid = 'Cover', 'Cover', '', int(cov.group(1)), 'cover'
         else:
-            num, var = m.group(4), ''   # named figure, e.g. CRD
-        fid = 'ch{}-fig{}{}'.format(ch, str(num).lower(), var)
+            m = PATTERN.match(name)
+            if not m:
+                continue
+            ch, ver = chapter_key(m.group(1)), int(m.group(5))
+            if m.group(2):
+                num, var = int(m.group(2)), m.group(3).lower()
+            else:
+                num, var = m.group(4), ''   # named figure, e.g. CRD
+            fid = 'ch{}-fig{}{}'.format(ch, str(num).lower(), var)
         found.setdefault(fid, {'ch': ch, 'num': num, 'var': var, 'versions': []})
         # mtime lets the dashboard mark only the most recently updated figures as new
         mtime = int(os.path.getmtime(os.path.join(FIG_DIR, name)))
@@ -68,14 +76,18 @@ def main():
         else:
             records[fid] = {
                 'id': fid, 'chapter': info['ch'], 'figure': info['num'], 'variant': info['var'],
-                'label': 'Fig. {}.{}{}'.format(info['ch'], info['num'], info['var']),
+                'label': 'Cover' if fid == 'cover'
+                         else 'Fig. {}.{}{}'.format(info['ch'], info['num'], info['var']),
                 'title': '', 'caption': '', 'notes': '', 'contact': '', 'date': '',
                 'versions': versions,
             }
 
+    # the cover first, then the chapters and the SPM; within a chapter,
     # numbered figures first, then named figures alphabetically
+    def chapter_sort(ch):
+        return (-1, 0) if ch == 'Cover' else (7, 0) if ch == 'SPM' else (0, ch)
     ordered = sorted(records.values(), key=lambda r: (
-        (7, 0) if r['chapter'] == 'SPM' else (0, r['chapter']),
+        chapter_sort(r['chapter']),
         (0, r['figure'], '') if isinstance(r['figure'], int) else (1, 0, str(r['figure']).lower()),
         r['variant']))
     with open(DATA_JS, 'w', encoding='utf-8') as f:

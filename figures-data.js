@@ -1,5 +1,24 @@
 window.AMOC_FIGURES = [
  {
+  "id": "cover",
+  "chapter": "Cover",
+  "figure": "Cover",
+  "variant": "",
+  "label": "Cover",
+  "title": "",
+  "caption": "",
+  "notes": "",
+  "contact": "",
+  "date": "",
+  "versions": [
+   {
+    "v": 1,
+    "file": "figures/AMOC_Cover_v1.jpg",
+    "mtime": 1795609370
+   }
+  ]
+ },
+ {
   "id": "ch1-fig1",
   "chapter": 1,
   "figure": 1,
@@ -182,6 +201,11 @@ window.AMOC_FIGURES = [
     "v": 8,
     "file": "figures/Ch_1_Figure_4_v8.jpg",
     "mtime": 1793725544
+   },
+   {
+    "v": 9,
+    "file": "figures/Ch_1_Figure_4_v9.jpg",
+    "mtime": 1793909423
    }
   ]
  },
@@ -260,6 +284,11 @@ window.AMOC_FIGURES = [
     "v": 2,
     "file": "figures/Ch_1_Figure_Propeller_v2.jpg",
     "mtime": 1793308956
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_1_Figure_Propeller_v3.jpg",
+    "mtime": 1793892467
    }
   ]
  },
@@ -527,6 +556,11 @@ window.AMOC_FIGURES = [
     "v": 4,
     "file": "figures/Ch_2_Figure_8_v4.jpg",
     "mtime": 1793729967
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_2_Figure_8_v5.jpg",
+    "mtime": 1793906140
    }
   ]
  },
@@ -546,6 +580,16 @@ window.AMOC_FIGURES = [
     "v": 0,
     "file": "figures/Ch_3_Figure_1_v0.png",
     "mtime": 1783943048
+   },
+   {
+    "v": 1,
+    "file": "figures/Ch_3_Figure_1_v1.jpg",
+    "mtime": 1793898586
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_3_Figure_1_v2.jpg",
+    "mtime": 1793978862
    }
   ]
  },
@@ -604,6 +648,21 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_3_Figure_3_v3.jpg",
     "mtime": 1793615764
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_3_Figure_3_v4.jpg",
+    "mtime": 1793901448
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_3_Figure_3_v5.jpg",
+    "mtime": 1793905138
+   },
+   {
+    "v": 6,
+    "file": "figures/Ch_3_Figure_3_v6.jpg",
+    "mtime": 1793981256
    }
   ]
  },
@@ -628,6 +687,16 @@ window.AMOC_FIGURES = [
     "v": 1,
     "file": "figures/Ch_3_Figure_4_v1.jpg",
     "mtime": 1789760613
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_3_Figure_4_v2.jpg",
+    "mtime": 1793902588
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_3_Figure_4_v3.jpg",
+    "mtime": 1793980343
    }
   ]
  },
@@ -676,6 +745,11 @@ window.AMOC_FIGURES = [
     "v": 1,
     "file": "figures/Ch_3_Figure_6_v1.jpg",
     "mtime": 1793617797
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_3_Figure_6_v2.jpg",
+    "mtime": 1793893254
    }
   ]
  },
@@ -705,6 +779,11 @@ window.AMOC_FIGURES = [
     "v": 2,
     "file": "figures/Ch_3_Figure_7_v2.jpg",
     "mtime": 1793617855
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_3_Figure_7_v3.jpg",
+    "mtime": 1793893240
    }
   ]
  },
@@ -749,6 +828,11 @@ window.AMOC_FIGURES = [
     "v": 5,
     "file": "figures/Ch_3_Figure_8_v5.jpg",
     "mtime": 1793621697
+   },
+   {
+    "v": 6,
+    "file": "figures/Ch_3_Figure_8_v6.jpg",
+    "mtime": 1793901369
    }
   ]
  },
@@ -941,6 +1025,16 @@ window.AMOC_FIGURES = [
     "v": 1,
     "file": "figures/Ch_5_Figure_1_v1.jpg",
     "mtime": 1790619739
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_5_Figure_1_v2.jpg",
+    "mtime": 1793989952
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_5_Figure_1_v3.jpg",
+    "mtime": 1794135292
    }
   ]
  },
@@ -1003,6 +1097,26 @@ window.AMOC_FIGURES = [
     "v": 1,
     "file": "figures/Ch_5_Figure_Impacts_v1.jpg",
     "mtime": 1793794137
+   },
+   {
+    "v": 2,
+    "file": "figures/Ch_5_Figure_Impacts_v2.jpg",
+    "mtime": 1793912032
+   },
+   {
+    "v": 3,
+    "file": "figures/Ch_5_Figure_Impacts_v3.jpg",
+    "mtime": 1793952653
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_5_Figure_Impacts_v4.jpg",
+    "mtime": 1793981051
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_5_Figure_Impacts_v5.jpg",
+    "mtime": 1794163031
    }
   ]
  },
@@ -1037,6 +1151,11 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_6_Figure_1_v3.jpg",
     "mtime": 1793653272
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_6_Figure_1_v4.jpg",
+    "mtime": 1793980930
    }
   ]
  },
@@ -1071,6 +1190,11 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_6_Figure_2_v3.jpg",
     "mtime": 1793700508
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_6_Figure_2_v4.jpg",
+    "mtime": 1794134988
    }
   ]
  },
@@ -1168,6 +1292,11 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_SPM_Figure_AMOC_v3.jpg",
     "mtime": 1791175178
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_SPM_Figure_AMOC_v4.jpg",
+    "mtime": 1793982338
    }
   ]
  },
@@ -1207,6 +1336,11 @@ window.AMOC_FIGURES = [
     "v": 4,
     "file": "figures/Ch_SPM_Figure_CRD_v4.jpg",
     "mtime": 1791193037
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_SPM_Figure_CRD_v5.jpg",
+    "mtime": 1793697970
    }
   ]
  },
@@ -1256,6 +1390,11 @@ window.AMOC_FIGURES = [
     "v": 6,
     "file": "figures/Ch_SPM_Figure_Impacts_v6.jpg",
     "mtime": 1791212207
+   },
+   {
+    "v": 7,
+    "file": "figures/Ch_SPM_Figure_Impacts_v7.jpg",
+    "mtime": 1793980930
    }
   ]
  },
@@ -1290,6 +1429,16 @@ window.AMOC_FIGURES = [
     "v": 3,
     "file": "figures/Ch_SPM_Figure_Maps_v3.jpg",
     "mtime": 1791192966
+   },
+   {
+    "v": 4,
+    "file": "figures/Ch_SPM_Figure_Maps_v4.jpg",
+    "mtime": 1794046085
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_SPM_Figure_Maps_v5.jpg",
+    "mtime": 1794046781
    }
   ]
  },
@@ -1329,6 +1478,11 @@ window.AMOC_FIGURES = [
     "v": 4,
     "file": "figures/Ch_SPM_Figure_Mechanism_v4.jpg",
     "mtime": 1791194057
+   },
+   {
+    "v": 5,
+    "file": "figures/Ch_SPM_Figure_Mechanism_v5.jpg",
+    "mtime": 1793981913
    }
   ]
  },
@@ -1383,6 +1537,36 @@ window.AMOC_FIGURES = [
     "v": 7,
     "file": "figures/Ch_SPM_Figure_Storylines_v7.jpg",
     "mtime": 1789547553
+   },
+   {
+    "v": 8,
+    "file": "figures/Ch_SPM_Figure_Storylines_v8.jpg",
+    "mtime": 1789547553
+   },
+   {
+    "v": 9,
+    "file": "figures/Ch_SPM_Figure_Storylines_v9.jpg",
+    "mtime": 1794005134
+   },
+   {
+    "v": 10,
+    "file": "figures/Ch_SPM_Figure_Storylines_v10.jpg",
+    "mtime": 1793957145
+   },
+   {
+    "v": 11,
+    "file": "figures/Ch_SPM_Figure_Storylines_v11.jpg",
+    "mtime": 1794004755
+   },
+   {
+    "v": 12,
+    "file": "figures/Ch_SPM_Figure_Storylines_v12.jpg",
+    "mtime": 1794492410
+   },
+   {
+    "v": 13,
+    "file": "figures/Ch_SPM_Figure_Storylines_v13.jpg",
+    "mtime": 1795442663
    }
   ]
  }

@@ -291,10 +291,16 @@ class Component extends DCLogic {
     };
     tryExt(0);
   }
+  // the cover is not a chapter figure, so it keeps its own filename
+  fileBase(f, v) {
+    return f.id === 'cover'
+      ? 'figures/AMOC_Cover_v' + v + '.'
+      : 'figures/Ch_' + f.chapter + '_Figure_' + f.figure + (f.variant || '') + '_v' + v + '.';
+  }
   probeNext(f, v) {
     if (v > 12) return;
     const exts = ['png', 'jpeg', 'jpg'];
-    const base = 'figures/Ch_' + f.chapter + '_Figure_' + f.figure + (f.variant || '') + '_v' + v + '.';
+    const base = this.fileBase(f, v);
     const tryExt = (i) => {
       if (i >= exts.length) return;
       const img = new Image();
@@ -342,6 +348,14 @@ class Component extends DCLogic {
               const num = m ? parseInt(m[1], 10) : figRaw;
               const variant = m && m[2] ? m[2].toLowerCase() : '';
               const get = (i) => i === -1 ? undefined : String(r[i] || '').trim();
+              if (/^cover$/i.test(chRaw)) {   // the cover is its own tab, not a chapter
+                sheet.cover = {
+                  chapter: 'Cover', figure: 'Cover', variant: '', label: 'Cover',
+                  title: get(ix.title), caption: get(ix.cap), notes: get(ix.notes),
+                  contact: get(ix.contact), date: get(ix.date)
+                };
+                return;
+              }
               sheet['ch' + ch + '-fig' + String(num).toLowerCase() + variant] = {
                 chapter: ch, figure: num, variant,
                 label: 'Fig. ' + (ch === 'SPM' ? 'SPM.' : ch + '.') + num + variant,
@@ -497,7 +511,7 @@ class Component extends DCLogic {
       latestLabel: latest ? 'v' + latest.v : '',
       status, stBg, stFg,
       statusShort: hasImg ? stSel.toLowerCase() : 'file missing',
-      chLabel: 'Chapter ' + f.chapter,
+      chLabel: typeof f.chapter === 'string' ? f.chapter : 'Chapter ' + f.chapter,
       title: f.title || '',
       hasTitle: !!f.title,
       capShort: f.title || f.caption || '(caption to be added)',
@@ -545,8 +559,9 @@ class Component extends DCLogic {
       id, ...sheet[id], versions: []
     }));
     const all = base.map(f => this.applySheet(f)).concat(sheetOnly).sort((a, b) => {
-      // chapters 1-6 first, then SPM; within a chapter, numbered figures before named ones
-      const ch = (f) => f.chapter === 'SPM' ? 7 : Number(f.chapter);
+      // the cover first, then chapters 1-6, then SPM; within a chapter,
+      // numbered figures before named ones
+      const ch = (f) => f.chapter === 'Cover' ? -1 : f.chapter === 'SPM' ? 7 : Number(f.chapter);
       const num = (f) => typeof f.figure === 'number' ? f.figure : Infinity;
       const name = (f) => typeof f.figure === 'number' ? '' : String(f.figure).toLowerCase();
       return ch(a) - ch(b)
@@ -564,12 +579,12 @@ class Component extends DCLogic {
       .sort((a, b) => updatedAt(b) - updatedAt(a))
       .slice(0, NEW_BADGE_COUNT).map(f => f.id));
 
-    const chapters = [1, 2, 3, 4, 5, 6, 'SPM'];
+    const chapters = ['Cover', 1, 2, 3, 4, 5, 6, 'SPM'];
     const requireGate = this.props.requirePassphrase ?? true;
     const unlocked = s.unlocked || !requireGate;
     const cols = this.props.gridColumns ?? 4;
 
-    const navItems = [{ ch: 0, label: 'All figures' }].concat(chapters.map(ch => ({ ch, label: ch === 'SPM' ? 'SPM' : 'Chapter ' + ch }))).map(n => {
+    const navItems = [{ ch: 0, label: 'All figures' }].concat(chapters.map(ch => ({ ch, label: typeof ch === 'string' ? ch : 'Chapter ' + ch }))).map(n => {
       const active = s.ch === n.ch;
       return {
         ...n,
@@ -599,9 +614,9 @@ class Component extends DCLogic {
         msg: s.gateMsg
       },
       meta: {
-        summary: all.length + ' figures · 6 chapters + SPM.'
+        summary: all.length + ' figures · cover, 6 chapters and SPM.'
       },
-      heading: s.ch === 0 ? 'All figures' : (s.ch === 'SPM' ? 'SPM' : 'Chapter ' + s.ch),
+      heading: s.ch === 0 ? 'All figures' : (typeof s.ch === 'string' ? s.ch : 'Chapter ' + s.ch),
       headingSub: list.length + (list.length === 1 ? ' figure' : ' figures'),
       listEmpty: list.length === 0,
       cols,
